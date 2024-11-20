@@ -18,9 +18,8 @@ header {
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto;
     max-width: 1320px;
     margin: 0 auto;
 }
