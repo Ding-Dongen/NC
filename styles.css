@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin-right: 60px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: x-large;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.hero {
+    height: 500px;
+    background-color: #465963;
+    
+}
+
+ /* section carusell */
+
+ .carousel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.carousel-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100%; /* Make sure each item takes full width of the carousel */
+    padding: 20px; /* Add some padding around the article */
+}
+
+article {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 400px;
+}
+
+article h2 {
+    margin-bottom: 10px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.featured {
+    margin-bottom: 30px;
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.featured img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+article {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    background-color: #444;
+}
+
+/* Subscribe form */
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+input[type="email"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Our mission section  */
+
+#mission {
+    padding: 50px 0;
+    text-align: center;
+    background: #e6e6e6; /* Light grey background for the section */
+}
+
+.mission-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mission-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.mission-content p {
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+.mission-list {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.mission-list li {
+    margin: 10px 0;
+    padding: 5px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-left: 3px solid #3498db;
+    padding-left: 10px;
+}
+
+.mission-quote {
+    font-style: italic;
+    margin: 30px auto;
+    max-width: 700px;
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mission-quote p {
+    margin-bottom: 10px;
+}
+
+.mission-quote cite {
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+/* Footer section */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-links .social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0077b5; /* Example hover color, adjust as needed */
+}
+
+.donation {
+    text-align: left;
+}
+
+.donation h3 {
+    margin-bottom: 5px;
+}
+
+.donation p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.donation-form {
+    display: flex;
+    align-items: center;
+}
+
+.donation-form input, .donation-form button {
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.donation-form input {
+    background: #fff;
+    color: #333;
+}
+
+.donation-form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donation-form button:hover {
+    background-color: #45a049;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.show {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #menu-toggle.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
